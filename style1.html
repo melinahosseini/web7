@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [lang] {
+        text-align: right;
+        color: brown;
+      }
+      p[lang="IT"] {
+        color: red;
+      }
+      [title~="flower"] {
+        background-color: lightslategray;
+      }
+      [href^="https"] {
+        text-decoration: overline;
+        text-decoration-color: yellowgreen;
+      }
+      [href$=".pdf"] {
+        color: blueviolet;
+        text-decoration: line-through;
+      }
+      div + p {
+        color: purple;
+      }
+      div > p > strong > span {
+        background-color: beige;
+      }
+      div p {
+        color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 lang="fa">این یک متن برای تست است</h1>
+    <p lang="IT">Lorem ipsum dolor sit amet.</p>
+    <p title="this pic is about flower">Lorem ipsum dolor sit amet.</p>
+    <a href="https://google.com">Lorem ipsum dolor sit amet.</a>
+    <br />
+    <a href="http://google.com.pdf">Lorem ipsum dolor sit amet.</a>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <span>Lorem ipsum dolor sit amet.</span>
+      <p>
+        <strong> <span>Lorem ipsum dolor sit amet.</span> </strong>
+      </p>
+    </div>
+    <p>Lorem, ipsum.</p>
+    
+  </body>
+</html>

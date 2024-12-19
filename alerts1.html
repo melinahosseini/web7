@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      .alert {
+        padding: 15px 20px;
+
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+      }
+      .alert .icon {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+      .alert.success {
+        border: 3px;
+        border-style: solid;
+        border-radius: 30px;
+        border-color: darkgreen;
+        color: darkgreen;
+        background-color: lightgreen;
+      }
+      .alert.error {
+        border-width: 10px;
+        border-style: hidden hidden hidden solid ;
+        border-radius: 8px;
+        border-color: #721c24;
+        color: #924048;
+        background-color: lightpink;
+      }
+      .alert.info {
+           background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+             border-style:outset ;
+             border-radius: 15px;
+          
+      }
+      
+        .alert.warning {
+            background-color: #fff3cd;
+            color: #433304;
+            border: 5px #433304;
+             border-style:double;
+             border-radius: 15px;
+        }
+           .alert.simple {
+            background-color: #e2e3e5;
+            color: #383d41;
+            border: 1px solid #d6d8db;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="alert success" style="margin: 10px">
+      <span class="icon">&#10004; </span>
+      <span>Download was successful</span>
+    </div>
+
+    <div class="alert error" style="margin: 10px">
+      <span class="icon"> &#10060;</span>
+      <span>Something went wrong. Please try again.</span>
+    </div>
+    <div class="alert info" style="margin: 10px">
+      <span class="icon">ℹ</span>
+      <span>Here is some important information for you.</span>
+    </div>
+    <div class="alert warning" style="margin: 10px">
+      <span class="icon">⚠</span>
+      <span>Warning!</span>
+    </div>
+    <div class="alert simple" style="margin: 10px">
+      <span class="icon">🔔</span>
+      <span>This is a simple alert message.</span>
+    </div>
+  </body>
+</html>

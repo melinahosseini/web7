@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .firstname {
+        border: 1px solid darkgray;
+        padding-left: 4px;
+        width: 20%;
+        transition: 0.1s;
+        &:focus {
+          outline: none;
+          border-bottom: 3px solid green;
+        }
+      }
+      .password {
+        border: 2px hidden;
+        padding-left: 4px;
+        width: 20%;
+        transition: 0.1s;
+        &:focus {
+             outline: none;
+          border-bottom: 2px solid red;
+          background-color: lightcoral;
+        }
+      }
+      .lastname {
+        border: 2px solid green;
+        padding-left: 4px;
+        width: 20%;
+        transition: 0.1s;
+        &:focus {
+             outline: none;
+          border: 4px solid green;
+        }
+      }
+      .address {
+        padding: 3px;
+        border: 2px dashed darkgoldenrod;
+        width: 20%;
+        transition: 0.2s;
+        &:focus {
+             outline: none;
+            padding: 10px;
+            border: 4px solid yellow;
+        }
+      }
+      .email {
+          padding: 3px;
+        border: 2px inset rgb(63, 130, 211);
+        width: 20%;
+        transition: 0.2s;
+        &:focus {
+            outline: none;
+            padding: 10px;
+            border: 4px dotted rgb(29, 18, 151);
+        }
+      }
+      .avatar {
+        width: 200px;
+        height: 200px;
+        border: 3px solid red;
+        border-radius: 100px;
+        overflow: hidden;
+        outline: 3px solid green;
+        outline-offset: 4px;
+      }
+      .avarar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="avatar">
+        <img src="assets/img/avatar.png" alt="avatar">
+    </div>
+    <br><br><br><br><br>
+    <input type="text" class="firstname" placeholder="firstname" />
+    <br /><br /><br />
+    <input type="text" class="lastname" placeholder="lastname" />
+    <br /><br /><br />
+    <input type="password" class="password" placeholder="password" />
+    <br /><br /><br />
+     <input type="text" class="address" placeholder="address" />
+     <br /><br /><br />
+     <input type="text" class="email" placeholder="email" />
+  </body>
+</html>
